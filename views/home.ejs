@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/filled-bars.css" />
+
+    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "easeInOutCubic". -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/vendors/easings.min.js"></script>
+    <script src="https://kit.fontawesome.com/0ee2fc9fa3.js"></script>
+
+    <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/vendors/scrolloverflow.min.js"></script>
+
+
+
+    <style>
+        .section {
+            text-align:center;
+            font-size: 3em;
+            position: relative;
+        }
+
+        #sweets{
+            position: absolute;
+            bottom: -400px;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            transition: all 1.1s ease-out;
+            -webkit-transition: all 1.1s ease-out;
+        }
+        .fp-viewing-fourthPage #sweets{
+            bottom: -40px;
+        }
+
+        .fp-viewing-lastPage #sweets{
+            bottom: 0;
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Info</a></li>
+    <li data-menuanchor="thirdPage"><a href="#thirdPage">About</a></li>
+    <li data-menuanchor="fourthPage"><a href="#fourthPage">Works</a></li>
+    <li data-menuanchor="lastPage"><a href="#lastPage">Contact</a></li>
+
+    <li><i class="fab fa-facebook-f"><a href="www.facebook.com"></a></i></li>
+
+
+</ul>
+<div id="fullpage">
+    <div class="section s1" id="firstPage" >
+        <H1>Tal Shukrun</H1>
+        <h2 style="background-color: #00000021;">Entrepreneur. UX consultant. MHCI. Co-Founder at Batu Digital and Unread Media.</h2>
+    </div>
+    <div class="section s2">
+        <h1>INFO</h1>
+        <p>
+            Our full-service web solutions help your business grow online leads, calls, and revenue.
+          <br>
+
+        </p>
+<ul class="ulq">
+        <li class="btn" style="background-color: #404B5A; color: white; font-size: 18px">
+                1,956+
+            <span style="font-size: .9em">webs</span>
+        </li>
+    <li class="btn" style="background-color: #2FD069; color: white; font-size: 18px">
+        2,239+
+        <span style="font-size: .9em">costumers</span>
+    </li>
+    <li class="btn" style="background-color: #FC6C7C; color: white; font-size: 18px">
+        154+
+        <span style="font-size: .9em">workers</span>
+    </li>
+</ul>
+    </div>
+    <div class="section s3">
+        <img id="profile" src="images/me2.jpg">
+        <p class="headerp1"> A little about Tal</p>
+        <p class="p1">
+            Batzaya, also known as Zack, is an entrepreneur, UX consultant, and book publisher.<br>
+            As an interdisciplinary professional by trade, Zack is carving his way in technology, design, media,<br>
+            and publishing with a goal to make lasting positive impact on people and the society.<br>
+            When he’s not working, he can be found exploring different countries and their cultures, doing photography,<br>
+        </p>
+    </div>
+    <div class="section s5">
+        <div class="slide slh">
+            <h1 style="color: white">Our Works (2019)</h1>
+            <h2>Scroll >></h2>
+        </div>
+        <div class="slide">
+            <img id="img1" src="images/hobnob_mac.png">
+        </div>
+        <div class="slide sl1">
+            <img id="img1" src="images/batbold_full.png">
+        </div>
+        <div class="slide"> Slide 3 </div>
+        <div class="slide"> Slide 4 </div>
+    </div>
+    <div class="section s4">
+        <h1 class="contact">SAY HELLO!</h1>
+
+        <img id="sweets" src="images/candy.png">
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.js"></script>
+<script>
+    new fullpage('#fullpage', {
+        autoScrolling: true,
+        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+        navigationTooltips: ['Home', 'Info','About','Works','Contact'],
+        // showActiveTooltip: true,
+        navigation: true,
+        controlArrows: true,
+        menu: '#menu',
+        responsiveSlides: true,
+        scrollHorizontally: true,
+        animateAnchor: true,
+        showActiveTooltip:false,
+        keyboardScrolling: true
+
+
+
+    });
+</script>
+</body>
+</html>
